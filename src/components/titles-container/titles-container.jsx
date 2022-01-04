@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
+import {useParams} from 'react-router-dom';
 import './titles-container.styles.scss';
 
-const TitleContainer = ({title, imageUrl, size}) => (
-  <div
-    className= {`${size} titles-container`} >
+const TitleContainer = ({title, imageUrl, size, history, linkUrl, match}) => (
+  <div className= {`${size} titles-container`} >
     <div 
       className = 'background-image' 
       style = {{
@@ -17,4 +17,5 @@ const TitleContainer = ({title, imageUrl, size}) => (
   </div>
 );
 
-export default TitleContainer; 
+
+export default (TitleContainer); 
